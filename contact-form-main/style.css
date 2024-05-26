@@ -1,7 +1,8 @@
 :root{
   --Light-Green:rgb(223, 241, 231);
   --Green:rgb(12, 125, 105);
-  --red:rgb(217, 69, 69);
+  --dark-Green: rgb(14, 89, 77)
+  --red: rgb(217, 69, 69);
   --White:rgb(255, 255, 255);
   --Medium-Grey:rgb(135, 163, 166);
   --Dark-Grey:rgb(43, 66, 70);
@@ -86,7 +87,7 @@ textarea, button{
 .check-paragraph{
   display: flex;
   gap: 5px;
-  margin: 15px 0 15px 0;
+  
 }
 
 .check-paragraph input{
@@ -95,10 +96,12 @@ textarea, button{
 
 h2{
   margin-bottom: 15px;
+  font-weight: 3rem;
+  font-size: 1.5rem;
 }
 
 .first-section input{
-  width: 222px;px;
+  width: 222px;
   
 }
 
@@ -119,7 +122,7 @@ h2{
 .first-section input,
 .inside input,.third-section input,
 .second-section input,button{
-  height: 35px;
+  height: 40px;
 
 }
 
@@ -128,7 +131,14 @@ button{
   border: none;
   color: var(--White);
   border-radius: 5px;
+  margin-top: 30px;
 }
+
+button:hover{
+  background-color: rgb(14, 89, 77);
+}
+
+
 
 input
 ,textarea{
@@ -146,12 +156,16 @@ input
 }
 
 .check-paragraph{
-  margin: 30px 0 30px 0;
+  margin: 30px 0 0 0;
+}
+.ch-al{
+  
+  margin-bottom: 15px;
 }
 
 
 textarea{
-  height: 60px;
+  height: 70px;
 }
 
 H4{
@@ -164,9 +178,16 @@ input, textarea{
   padding: 10px;
   font-family:"Karla", sans-serif; ;
 }
+
+input, textarea:hover{
+  border: 0.1px solid var(--Green);
+  cursor: pointer;
+}
+
 .same:focus,
 .same:active{
   outline: 0.1px solid var(--Green);
+  cursor: pointer;
 }
 
 input[type='radio'], input[type="checkbox"]{
@@ -182,4 +203,76 @@ input[type='radio']:checked:after{
 .p1{
   color: red;
   margin-top: 5px;
+}
+
+@media (max-width:524px){
+  .continer{
+    margin: 10px;
+    width: 92%;
+  }
+  .first-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #First-Name{
+    width: 100%;
+  }
+  #last-Name2{
+    width: 100%;
+  }
+  .last-Name{
+    margin-top: 5px;
+  }
+  .name{
+    margin-bottom:15px ;
+  }
+
+  .third-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .third-section H4{
+    display: inline;
+  }
+  .third-section label{
+    display: inline;
+  }
+
+  .second-section{
+    width: 100%;
+  }
+  #email{
+    width: 100%;
+  }
+  .same{
+    width: 100%;
+    height: 300px;
+  }
+  .inside{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .query1{
+    width: 100%;
+  }
+
+  .query2{
+    width: 100%;
+  }
+
+  .submit{
+    width: 100%;
+  }
+
+  button{
+    width: 100%;
+  }
+
+  .fouth-section{
+    width: 100%;
+  }
 }
